@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodora Premium Furniture - Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Custom styles to match screenshot aesthetics */
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                        url('https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .gold-gradient {
+            background: linear-gradient(90deg, #ffe066, #fcc419);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-xs">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="border-2 border-black px-1.5 py-0.5 font-black text-xs tracking-tighter">WA</div>
+                <div class="leading-none">
+                    <span class="font-extrabold tracking-wider block text-sm">WOODORA</span>
+                    <span class="text-[9px] tracking-widest text-gray-500 block uppercase">Premium Furniture</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                <a href="#" class="hover:text-black transition">Home</a>
+                <a href="#collections" class="hover:text-black transition">Collections</a>
+                <a href="#emi-section" class="hover:text-black transition">Offers & EMI</a>
+                <a href="#premium-gallery" class="hover:text-black transition">3D Gallery</a>
+            </div>
+
+            <div class="hidden md:block">
+                <a href="tel:+910000000000" class="bg-[#d2b48c] text-neutral-900 font-semibold px-5 py-2 rounded-sm text-sm hover:bg-[#c1a37c] transition shadow-xs">
+                    Call Now
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-gray-700 text-xl focus:outline-none cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3 shadow-inner">
+            <a href="#" class="block text-gray-700 font-medium py-1">Home</a>
+            <a href="#collections" class="block text-gray-700 font-medium py-1">Collections</a>
+            <a href="#emi-section" class="block text-gray-700 font-medium py-1">Offers & EMI</a>
+            <a href="#premium-gallery" class="block text-gray-700 font-medium py-1">3D Gallery</a>
+            <hr class="border-gray-100 my-2">
+            <a href="tel:+910000000000" class="block w-full text-center bg-[#d2b48c] text-neutral-900 font-bold py-2 rounded-sm text-sm">
+                Call Now
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero-bg min-h-[85vh] flex flex-col items-center justify-center text-center px-4 py-16 text-white">
+        <div class="gold-gradient text-neutral-900 font-bold text-xs px-4 py-1 rounded-full shadow-xs mb-6 flex items-center space-x-1.5 animate-pulse">
+            <i class="fa-solid fa-star"></i>
+            <span>WOODORA FURNITURE - Premium Quality #1</span>
+        </div>
+
+        <h1 class="text-3xl md:text-5xl font-black tracking-tight max-w-3xl leading-tight mb-4">
+            Elevate Your Space with Woodora
+        </h1>
+        <p class="text-sm md:text-base text-gray-200 max-w-xl font-light leading-relaxed mb-8">
+            Premium handcrafted furniture, designed for timeless elegance. Transform your home into a sanctuary of sophistication.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-xs sm:max-w-md">
+            <a href="#collections" class="w-full sm:w-auto bg-[#ebdcb9] text-gray-900 font-bold px-8 py-3.5 rounded-sm hover:bg-white transition text-sm tracking-wide shadow-md">
+                Explore Collection
+            </a>
+            <a href="#emi-section" class="w-full sm:w-auto border border-white/80 bg-black/20 hover:bg-white/10 text-white font-semibold px-8 py-3.5 rounded-sm transition text-sm tracking-wide">
+                <i class="fa-solid fa-angle-down mr-1"></i> Contact Us
+            </a>
+        </div>
+    </header>
+
+    <section id="emi-section" class="py-16 px-4 max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+            <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                <i class="fa-solid fa-shield-halved mr-1"></i> Trusted Service
+            </span>
+            <h2 class="text-2xl md:text-4xl font-extrabold tracking-tight mt-3 text-slate-900">All Kerala Delivery</h2>
+            <p class="text-orange-600 font-black text-3xl md:text-5xl mt-1 tracking-tight">0% Interest EMI</p>
+            <p class="text-gray-500 text-sm max-w-lg mx-auto mt-3">
+                Experience premium furniture shopping with onsite delivery across Kerala and flexible 0% interest EMI options. Transform your home today, pay comfortably tomorrow.
+            </p>
+        </div>
+
+        <div class="bg-[#111827] text-white rounded-2xl p-6 shadow-xl border border-gray-800 max-w-md mx-auto">
+            <div class="flex justify-between items-start mb-4">
+                <div>
+                    <h3 class="font-bold text-sm text-gray-400 uppercase tracking-wider">Woodora EMI</h3>
+                    <p class="text-xs text-gray-500">Easy Payment Plans</p>
+                </div>
+                <span class="bg-emerald-500/10 text-emerald-400 text-xs font-medium px-2.5 py-0.5 rounded border border-emerald-500/20">Approved</span>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between text-xs text-gray-400 mb-1">
+                    <span>Furniture Price (Adjustable)</span>
+                    <span class="font-bold text-white text-sm" id="price-display">₹45,000</span>
+                </div>
+                <input type="range" id="price-slider" min="15000" max="150000" step="5000" value="45000" 
+                       class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-amber-500">
+            </div>
+
+            <div class="border-t border-gray-800 my-4 pt-4 flex justify-between items-center">
+                <span class="text-xs text-gray-400 font-medium">Monthly EMI</span>
+                <span class="text-xl font-black text-emerald-400" id="emi-display">₹3,750</span>
+            </div>
+
+            <div class="bg-gray-900/50 rounded-xl p-3 border border-gray-800 mb-4">
+                <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden mb-2">
+                    <div class="bg-blue-500 h-1.5 w-[75%] rounded-full"></div>
+                </div>
+                <p class="text-[11px] text-gray-400 flex justify-between">
+                    <span>12 months • 0% Interest</span>
+                    <span>Plan: Premium</span>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-800 text-[10px] text-gray-400">
+                <div><i class="fa-solid fa-truck text-emerald-500 mr-1.5"></i> Onsite Delivery</div>
+                <div><i class="fa-solid fa-map-location-dot text-amber-500 mr-1.5"></i> Kerala Wide</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 text-center max-w-2xl mx-auto">
+            <div class="p-3 bg-white border border-gray-100 shadow-xs rounded-lg">
+                <i class="fa-solid fa-truck-ramp-box text-emerald-600 text-lg mb-1 block"></i>
+                <span class="text-xs font-semibold text-gray-700">All Kerala Delivery</span>
+            </div>
+            <div class="p-3 bg-white border border-gray-100 shadow-xs rounded-lg">
+                <i class="fa-solid fa-percent text-amber-600 text-lg mb-1 block"></i>
+                <span class="text-xs font-semibold text-gray-700">0% Interest EMI</span>
+            </div>
+            <div class="p-3 bg-white border border-gray-100 shadow-xs rounded-lg">
+                <i class="fa-solid fa-house-chimney text-blue-600 text-lg mb-1 block"></i>
+                <span class="text-xs font-semibold text-gray-700">Onsite Delivery</span>
+            </div>
+            <div class="p-3 bg-white border border-gray-100 shadow-xs rounded-lg">
+                <i class="fa-solid fa-lock text-purple-600 text-lg mb-1 block"></i>
+                <span class="text-xs font-semibold text-gray-700">Secure Payment</span>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-gray-200/60 my-4 max-w-5xl mx-auto">
+
+    <section id="collections" class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-4xl font-extrabold tracking-tight text-neutral-900">Our Collections</h2>
+            <p class="text-sm text-gray-500 mt-2 max-w-lg mx-auto">
+                Discover our carefully curated furniture collections designed for every space in your home
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-white rounded-xl overflow-hidden shadow-xs border border-gray-100 group cursor-pointer" onclick="alert('Opening Living Room Catalog...')">
+                <div class="relative overflow-hidden aspect-square bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80" alt="Living Room" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-4 flex justify-between items-center bg-white">
+                    <span class="font-bold text-sm tracking-tight text-gray-800">Living Room</span>
+                    <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:text-black transition"></i>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden shadow-xs border border-gray-100 group cursor-pointer" onclick="alert('Opening Bedroom Catalog...')">
+                <div class="relative overflow-hidden aspect-square bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=400&q=80" alt="Bedroom" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-4 flex justify-between items-center bg-white">
+                    <span class="font-bold text-sm tracking-tight text-gray-800">Bedroom</span>
+                    <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:text-black transition"></i>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden shadow-xs border border-gray-100 group cursor-pointer" onclick="alert('Opening Dining Catalog...')">
+                <div class="relative overflow-hidden aspect-square bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1617806118233-18e1db207fa6?auto=format&fit=crop&w=400&q=80" alt="Dining" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-4 flex justify-between items-center bg-white">
+                    <span class="font-bold text-sm tracking-tight text-gray-800">Dining</span>
+                    <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:text-black transition"></i>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden shadow-xs border border-gray-100 group cursor-pointer" onclick="alert('Opening Office Catalog...')">
+                <div class="relative overflow-hidden aspect-square bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=400&q=80" alt="Office" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-4 flex justify-between items-center bg-white">
+                    <span class="font-bold text-sm tracking-tight text-gray-800">Office</span>
+                    <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:text-black transition"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="premium-gallery" class="bg-[#0b0f19] py-16 px-4 text-white">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+            <h2 class="text-2xl md:text-4xl font-extrabold tracking-tight">Premium Collection</h2>
+            <p class="text-xs md:text-sm text-gray-400 mt-2">Explore our handcrafted furniture pieces with interactive gallery</p>
+        </div>
+
+        <div class="max-w-lg mx-auto relative px-2">
+            <div class="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-gray-800">
+                <img id="gallery-img" src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=600&q=80" alt="Premium Setup" class="w-full h-full object-cover transition-all duration-300">
+                
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/60 to-transparent p-4 pt-12 text-center">
+                    <h4 id="gallery-label" class="font-bold text-lg tracking-wide text-amber-100">Desk Setup</h4>
+                </div>
+            </div>
+
+            <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white w-9 h-9 rounded-full flex items-center justify-center border border-white/20 active:scale-95 cursor-pointer">
+                <i class="fa-solid fa-chevron-left text-xs"></i>
+            </button>
+            <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white w-9 h-9 rounded-full flex items-center justify-center border border-white/20 active:scale-95 cursor-pointer">
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+            </button>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 py-8 text-center text-xs text-gray-400">
+        <p class="font-medium text-gray-600">&copy; 2026 Woodora Premium Furniture. All rights reserved.</p>
+        <p class="mt-1 font-mono text-[10px]">Demo Designed for Mobile Testing.</p>
+    </footer>
+
+    <a href="https://wa.me/910000000000?text=Hi%20Woodora,%20I'm%20interested%20in%20your%20furniture%20collection!" 
+       target="_blank" 
+       class="fixed bottom-5 right-5 z-50 bg-[#25d366] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-xl hover:scale-105 active:scale-95 transition-transform">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // -- Mobile Drawer Menu Logic --
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu automatically on touch navigation link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // -- Interactive Real-Time EMI Calculator Logic --
+        const slider = document.getElementById('price-slider');
+        const priceDisplay = document.getElementById('price-display');
+        const emiDisplay = document.getElementById('emi-display');
+
+        slider.addEventListener('input', (e) => {
+            const currentPrice = parseInt(e.target.value);
+            // Format currency layout text
+            priceDisplay.innerText = `₹${currentPrice.toLocaleString('en-IN')}`;
+            
+            // Generate simple math layout: Price divided by 12 months with 0% interest rate
+            const rawEmi = Math.round(currentPrice / 12);
+            emiDisplay.innerText = `₹${rawEmi.toLocaleString('en-IN')}`;
+        });
+
+        // -- Dynamic Premium Gallery Carousel Database Matrix --
+        const slides = [
+            {
+                img: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=600&q=80",
+                label: "Desk Setup"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80",
+                label: "Minimalist Lounge Chair"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=600&q=80",
+                label: "Premium Modular Wardrobe"
+            }
+        ];
+
+        let currentSlideIndex = 0;
+        const galleryImg = document.getElementById('gallery-img');
+        const galleryLabel = document.getElementById('gallery-label');
+
+        function updateSlide() {
+            galleryImg.src = slides[currentSlideIndex].img;
+            galleryLabel.innerText = slides[currentSlideIndex].label;
+        }
+
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+            updateSlide();
+        }
+    </script>
+</body>
+</html>
